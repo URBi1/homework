@@ -4,15 +4,16 @@ const coffeeShop = {
   money: 100,
 
   drinkRequirements: {
-    latte: 10,
-    americano: 5,
-    doubleShot: 15,
-    frenchPress: 12
+    latte: {beanRequirement: 10, price: 5},
+    americano: {beanRequirement: 5, price: 3},
+    doubleShot: {beanRequirement:15, proce: 6},
+    frenchPress: {beanRequirement:12, proce: 5}
   },
 
   makeDrink: function (drinkType) {
     if(!this.drinkRequirements[drinkType]) alert("sorry we dont make"+drinkType)
-    else if(this.drinkRequirements?.[drinkType]<=this.beans) this.beans-=this.drinkRequirements[drinkType]
+    else if(this.drinkRequirements?.[drinkType].beanRequirement<=this.beans) 
+    this.beans-=this.drinkRequirements[drinkType].beanRequirement
     else alert("Sorry, we’re all out of beans")    
     },
   buyBeans: function (numBeans)
@@ -22,6 +23,12 @@ const coffeeShop = {
       this.beans += numBeans
     } 
     else alert ("no money no honey") 
+  },
+  buyDrink: function(drinkType) {
+    if(this.drinkRequirements[drinkType]) {
+      this.money += this.drinkRequirements[drinkType].price
+      this.makeDrink(drinkType)
+    } 
   }
 }
 coffeeShop.makeDrink("latte"); 
@@ -32,5 +39,15 @@ coffeeShop.makeDrink("frenchPress"); //should alert/console "Sorry, we're all ou
 coffeeShop.buyBeans(10)
 coffeeShop.buyBeans(10)
 coffeeShop.buyBeans(10)
+coffeeShop.buyDrink("her")
+coffeeShop.buyDrink("latte")
+coffeeShop.buyDrink("americano")
+coffeeShop.buyDrink("latte")
+coffeeShop.buyDrink("latte")
+coffeeShop.buyDrink("latte")
+coffeeShop.buyDrink("latte")
+coffeeShop.buyDrink("latte")
+coffeeShop.buyDrink("latte")
+
 
 
