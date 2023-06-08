@@ -1,0 +1,25 @@
+
+body{
+    background-image: url(https://static.tildacdn.com/tild3736-3833-4231-a439-616330363066/12.gif);
+    background-size: cover;
+}
+
+.title {
+    font-size: 5em;
+    position: absolute;
+    left: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.transparent {
+    top: 20%;
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: rgba(0, 0, 0, 0.3); 
+}
+
+.opaque {
+    top: 80%;
+    background-color: rgb(0, 255, 38); 
+    color: rgb(181, 25, 25); 
+}

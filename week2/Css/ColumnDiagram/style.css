@@ -1,0 +1,45 @@
+  #rectangle {
+    position: relative;
+    width: 361px;
+    height: 141px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #money {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+
+  #time {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+  }
+
+  #chart {
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+    left: 20px;
+  }
+
+  .bar {
+    width: 20px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+  }
+  .bar1 { height: 20px; left: 0; }
+  .bar2 { height: 40px; left: 30px; }
+  .bar3 { height: 80px; left: 60px; }
+  .bar4 { height: 100px; left: 90px; }
+  .bar5 { height: 70px; left: 120px; }
+  .bar6 { height: 40px; left: 150px; }

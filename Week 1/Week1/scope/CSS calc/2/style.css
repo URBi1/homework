@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+}
+
+.section {
+    width: calc(100%/3);
+}
+

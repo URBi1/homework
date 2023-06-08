@@ -1,0 +1,41 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 100;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#navbar ul {
+  
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#navbar a {
+    color: white;
+  
+}
+
+#content {
+    margin-top: 6   0px; /* To prevent the content from being hidden behind the fixed navbar */
+    padding: 40px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 100;
+}

@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    flex-grow: 1;
+}
+
+.right-section {
+    width: 20px;
+}

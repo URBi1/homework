@@ -1,0 +1,37 @@
+#chocolate {
+  background-color: black;
+  display: inline-block;
+  padding: 4px;
+}
+#middle {
+  background-color: darkred;
+  height: 5px;
+  width: 385px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.block {
+  background-color: #66320E;
+  width: 90px;
+  height: 90px;
+  margin: 3px;
+}
+#block-1 {
+  float: right;
+}
+#block-2 {
+  float: right;
+}
+#block-3 {
+  float: right;
+}
+#block-5 {
+  float: left;
+}
+#block-6 {
+  float: left;
+}
+#block-7 {
+  float: left;
+}
+Mark as Completed
