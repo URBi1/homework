@@ -1,10 +1,11 @@
 #container{
     grid-template-areas: 
-    "h h h h h h"
-    "s s m m m m"
-    "s s m m m m"
-    "s s m m m m"
-    "s s f f f f";
+    "h h m m f f"
+    "h h m m f f"
+    "h h . . f f"
+    "h h s s f f"
+    "h h s s f f"
+    "h h s s f f";
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);

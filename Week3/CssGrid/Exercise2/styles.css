@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+.menu {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
+
+.icon {
+    /* Insert your icon here */
+    background-color: #f39c12;
+}
+
+.table {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+}
+
+.table1 {
+    grid-column: 1;
+}
+
+.table2 {
+    grid-column: 2 / 4;
+}
+
+.table3 {
+    grid-column: 3;
+}
+
+.table4 {
+    grid-column: 4;
+}
+
+.cell {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #bdc3c7;
+}
+
+.empty {
+    grid-column: 3 / 5;
+}
+
+.footer {
+    grid-column: span 4;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+}
