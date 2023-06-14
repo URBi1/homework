@@ -1,0 +1,75 @@
+#container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "white1 white1 white2 white2 . grey ."
+        "violet violet violet violet . grey ."
+        "blue blue blue blue blue blue blue"
+        ". . . violetlarge violetlarge violetlarge violetlarge"
+        ". . . lightbluelarge lightbluelarge lightbluelarge lightbluelarge"
+        ". . . lightbluelarge lightbluelarge lightbluelarge lightbluelarge";
+}
+
+.box {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box-white1 {
+    grid-area: white1;
+    background-color: white;
+}
+
+.box-white2 {
+    grid-area: white2;
+    background-color: white;
+}
+
+.box-violet {
+    grid-area: violet;
+    background-color: violet;
+}
+
+.box-blue {
+    grid-area: blue;
+    background-color: blue;
+}
+
+.box-grey {
+    grid-area: grey;
+    background-color: grey;
+}
+
+.box-violet-large {
+    grid-area: violetlarge;
+    background-color: violet;
+}
+
+.box-lightblue-large {
+    grid-area: lightbluelarge;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "whiteleft whiteleft . ."
+        ". . whiteright whiteright";
+}
+
+.box-white-left {
+    grid-area: whiteleft;
+    background-color: white;
+}
+
+.box-white-right {
+    grid-area: whiteright;
+    background-color: white;
+}
