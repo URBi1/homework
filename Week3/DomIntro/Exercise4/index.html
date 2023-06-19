@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="salary">Salary:</label><br>
+    <input type="number" id="salary" name="salary"><br>
+    <label for="birthday">Birthday:</label><br>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="phone">Phone:</label><br>
+    <input type="number" id="phone" name="phone"><br>
+    <button type="button" onclick="validate()">Submit</button>
+  </form>
+  <div id="messages"></div>
+<script>
+  function validate() {
+  var name = document.getElementById("name").value;
+  var salary = document.getElementById("salary").value;
+  var birthday = document.getElementById("birthday").value;
+  var phone = document.getElementById("phone").value;
+  
+  var messages = document.getElementById("messages");
+  messages.innerHTML = ""; 
+
+  if (name.length <= 2) {
+    var errorMsg = document.createElement("p");
+    errorMsg.style.color = "red";
+    errorMsg.innerText = "Name must be longer than 2 characters.";
+    messages.appendChild(errorMsg);
+  }
+
+  if (salary < 10000 || salary > 16000) {
+    var errorMsg = document.createElement("p");
+    errorMsg.style.color = "red";
+    errorMsg.innerText = "Salary must be greater than 10,000 but less than 16,000.";
+    messages.appendChild(errorMsg);
+  }
+
+  if (birthday === "") {
+    var errorMsg = document.createElement("p");
+    errorMsg.style.color = "red";
+    errorMsg.innerText = "Birthday may not be null.";
+    messages.appendChild(errorMsg);
+  }
+
+  if (phone.length != 10) {
+    var errorMsg = document.createElement("p");
+    errorMsg.style.color = "red";
+    errorMsg.innerText = "Phone must be 10 digits long.";
+    messages.appendChild(errorMsg);
+  }
+
+  if (messages.innerHTML === "") { // If no error messages were added, the form was filled out correctly
+    document.getElementById("myForm").style.display = "none";
+    var successMsg = document.createElement("p");
+    successMsg.style.color = "green";
+    successMsg.innerText = "Welcome, " + name + "!";
+    messages.appendChild(successMsg);
+  }
+}
+
+</script>
+</body>
+</html>

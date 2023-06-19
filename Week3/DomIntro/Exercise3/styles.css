@@ -1,0 +1,8 @@
+.box {
+    width:  10px;
+    height: 10px;
+    border: 1px solid black;
+    margin: 1px;
+    display: inline-block;
+  }
+  
