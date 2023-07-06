@@ -1,0 +1,19 @@
+{
+    "name": "Cow",
+    "weightKg": 680,
+    "habitat": ["Pastures", "Grasslands"],
+    "isEndangered": false,
+    "diet": [
+      {
+        "foodName": "grass",
+        "percentageOfDiet": 80
+      },
+      {
+        "foodName": "grains",
+        "percentageOfDiet": 20
+      }
+    ],
+    "predators": ["Humans", "Wolves"],
+    "deliciousRating": 4
+  }
+  
