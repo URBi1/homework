@@ -7,12 +7,12 @@ class Document {
 
 class Employee{
     constructor(name){
-        this.name=name
+        this.name = name;
     }
     work(office)
     {
         for (let i = 0; i < 10; i++) {
-            office.push(new Document());
+            office.documents.push(new Document(this.name));
         }
     }
 }
@@ -40,6 +40,28 @@ class Cleaner{
     }
     clean(){
         console.log("Clean")
+    }
+}
+
+class Office{
+    constructor(){
+        this.documents= []
+        this.managers=[]
+        this.cleaners=[]
+    }
+    hireCleaner(name){
+        this.cleaners.push(new Cleaner(name))
+    }
+    hireManager(name){
+        this.managers.push(new Manager(name))
+    }
+    startWorkDay(){
+        for(let manager of this.managers) {
+            manager.askEmployeesToWork(this);
+        }
+        for(let cleaner of this.cleaners) {
+            cleaner.clean();
+        }
     }
 }
 
