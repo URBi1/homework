@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        
+    </head>
+
+    <body>
+
+        <select id="queryTypeSelect">
+            <option value="isbn">ISBN</option>
+            <option value="title">Title</option>
+        </select>
+        <input type="text" id="queryValueInput" placeholder="Enter query value here">
+        <button id="fetchButton">Get Data</button>
+
+        <div id="bookInfo"></div>
+
+        <script id="book-template" type="text/x-handlebars-template">
+            {{#each this}}
+                <h2>Title: {{volumeInfo.title}}</h2>
+                <h3>Authors: {{volumeInfo.authors}}</h3>
+                <p>ISBN: {{volumeInfo.industryIdentifiers.[0].identifier}}</p>
+                <hr>
+            {{/each}}
+        </script>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+    </html>
