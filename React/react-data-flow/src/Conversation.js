@@ -10,7 +10,7 @@ const Conversation = (props) => {
                 {message.text}
             </div>
         ))}
-        <button className="back2" onClick={props.goBack}>Back</button>
+        <button className="back" onClick={props.goBack}>Back</button>
     </div>
     );
 }

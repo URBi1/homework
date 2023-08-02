@@ -27,7 +27,7 @@ function App() {
     )
    }
   
-   let currentTemperature = -20;
+   let currentTemperature = - 20;
 
    return (
     <div className="ex-space">
